@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كيف يعمل تطبيق متجري الالكتروني — كل السيناريوهات</title>
+<meta name="description" content="دليل تفصيلي لكل سيناريوهات تطبيق متجري الالكتروني: التسجيل، التصفح، الطلب، التوصيل والاستلام، حالات الطلب، التعديل والموافقة، الإلغاء، والإشعارات.">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-title-ar="كيف يعمل تطبيق متجري الالكتروني — كل السيناريوهات" data-title-en="How My Store Works — Every Scenario">
+
+<!-- ============ Navbar ============ -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="assets/icon.png" alt="شعار متجري الالكتروني">
+      <span class="lang-ar">متجري الالكتروني</span>
+      <span class="lang-en">My Store</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"><span class="lang-ar">الرئيسية</span><span class="lang-en">Home</span></a></li>
+      <li><a href="how-it-works.html" class="active"><span class="lang-ar">كيف يعمل التطبيق</span><span class="lang-en">How It Works</span></a></li>
+      <li><a href="privacy.html"><span class="lang-ar">سياسة الخصوصية</span><span class="lang-en">Privacy Policy</span></a></li>
+      <li><a href="index.html#contact"><span class="lang-ar">تواصل معنا</span><span class="lang-en">Contact</span></a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button data-lang="ar">AR</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ Page hero ============ -->
+<header class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html"><span class="lang-ar">الرئيسية</span><span class="lang-en">Home</span></a>
+      <span>/</span>
+      <span><span class="lang-ar">كيف يعمل التطبيق</span><span class="lang-en">How It Works</span></span>
+    </div>
+    <h1><span class="lang-ar">كل سيناريوهات التطبيق، بالتفصيل</span><span class="lang-en">Every App Scenario, In Detail</span></h1>
+    <p>
+      <span class="lang-ar">من إنشاء الحساب إلى استلام طلبك — دليل شامل لكل ما قد يحصل أثناء استخدامك للتطبيق.</span>
+      <span class="lang-en">From creating your account to receiving your order — a complete guide to everything that can happen while using the app.</span>
+    </p>
+  </div>
+</header>
+
+<!-- ============ 1. Account ============ -->
+<section id="account">
+  <div class="container">
+    <div class="policy-wrap" style="grid-template-columns:1fr;max-width:820px;margin:0 auto;">
+      <div class="policy-doc">
+        <div class="card" data-reveal>
+          <h2><span class="num">١</span> <span class="lang-ar">إنشاء الحساب وتسجيل الدخول</span><span class="lang-en">Creating an Account &amp; Logging In</span></h2>
+          <p>
+            <span class="lang-ar">عند فتح التطبيق لأول مرة، تُنشئ حساباً باسمك ورقم هاتفك وكلمة مرور. في المرات التالية تسجّل الدخول بنفس رقم الهاتف وكلمة المرور مباشرة.</span>
+            <span class="lang-en">The first time you open the app, you create an account with your name, phone number, and a password. Every time after that, you simply log in with the same phone number and password.</span>
+          </p>
+          <div class="callout blue mt-24">
+            <span class="ico">ℹ️</span>
+            <span>
+              <span class="lang-ar">قد يقوم المتجر بمراجعة حسابات الزبائن الجدد يدوياً قبل تفعيلها. إن كان الأمر كذلك، ستظهر لك رسالة توضح أن حسابك قيد المراجعة، وتصلك رسالة فور الموافقة عليه.</span>
+              <span class="lang-en">The store may manually review new customer accounts before activation. If so, you'll see a message that your account is under review, and you'll be notified as soon as it's approved.</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- ============ 2. Browsing & Ordering ============ -->
+        <div class="card" id="ordering" data-reveal>
+          <h2><span class="num">٢</span> <span class="lang-ar">التصفح، السلة، وإتمام الطلب</span><span class="lang-en">Browsing, Cart &amp; Checkout</span></h2>
+          <ol style="padding-inline-start:22px;">
+            <li><span class="lang-ar">تصفّح المنتجات حسب الفئة (خضروات، ألبان، مشروبات...) أو استخدم البحث للوصول مباشرة لمنتج معيّن.</span><span class="lang-en">Browse products by category (vegetables, dairy, drinks...) or use search to find a specific item directly.</span></li>
+            <li><span class="lang-ar">اضغط على المنتج لعرض تفاصيله، وحدّد الكمية التي تريدها، ثم أضفه إلى السلة.</span><span class="lang-en">Tap a product to see its details, set the quantity you want, and add it to your cart.</span></li>
+            <li><span class="lang-ar">عند الانتهاء من التسوّق، افتح السلة لمراجعة منتجاتك وتعديل الكميات إن أردت.</span><span class="lang-en">When you're done shopping, open your cart to review items and adjust quantities if needed.</span></li>
+            <li><span class="lang-ar">اضغط "إتمام الطلب"، واختر طريقة الاستلام المناسبة لك (تفصيل ذلك في القسم التالي).</span><span class="lang-en">Tap "Checkout" and choose the fulfillment method that suits you (details in the next section).</span></li>
+            <li><span class="lang-ar">أكّد الطلب — سيصل فوراً لفريق المتجر لبدء تجهيزه.</span><span class="lang-en">Confirm your order — it's instantly sent to our team to begin preparing it.</span></li>
+          </ol>
+        </div>
+
+        <!-- ============ 3. Delivery vs Pickup ============ -->
+        <div class="card" data-reveal>
+          <h2><span class="num">٣</span> <span class="lang-ar">التوصيل أو الاستلام من المتجر</span><span class="lang-en">Delivery or In-Store Pickup</span></h2>
+          <div class="grid grid-2 mt-16">
+            <div class="feature-card" style="box-shadow:none;">
+              <div class="feature-icon" style="background:#E8F1FC;">🚚</div>
+              <h3><span class="lang-ar">توصيل للمنزل</span><span class="lang-en">Home Delivery</span></h3>
+              <p><span class="lang-ar">تحدّد عنوانك أو منطقتك، ويوصّل عامل التوصيل طلبك إلى باب منزلك. تدفع نقداً له عند الاستلام.</span><span class="lang-en">Set your address or delivery area, and our delivery worker brings the order to your door. Pay cash upon arrival.</span></p>
+            </div>
+            <div class="feature-card" style="box-shadow:none;">
+              <div class="feature-icon" style="background:#EAF6EC;">🏬</div>
+              <h3><span class="lang-ar">استلام من المتجر</span><span class="lang-en">In-Store Pickup</span></h3>
+              <p><span class="lang-ar">يجهَّز طلبك وينتظرك في المتجر، ويصلك إشعار بمجرّد أن يصبح جاهزاً للاستلام. تدفع نقداً في المتجر.</span><span class="lang-en">Your order is prepared and waits for you at the store — you're notified the moment it's ready. Pay cash in-store.</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ 4. Order status flow ============ -->
+        <div class="card" id="status" data-reveal>
+          <h2><span class="num">٤</span> <span class="lang-ar">مراحل الطلب — خطوة بخطوة</span><span class="lang-en">Order Stages — Step by Step</span></h2>
+          <p><span class="lang-ar">إن اخترت التوصيل، يمر طلبك بهذه المراحل:</span><span class="lang-en">If you chose delivery, your order goes through these stages:</span></p>
+          <div class="flow">
+            <span class="chip" style="background:#F9A825"><span class="lang-ar">قيد الانتظار</span><span class="lang-en">Pending</span></span>
+            <span class="flow-arrow">←</span>
+            <span class="chip" style="background:#1976D2"><span class="lang-ar">جاهزة للتوصيل</span><span class="lang-en">Ready for delivery</span></span>
+            <span class="flow-arrow">←</span>
+            <span class="chip" style="background:#6A1B9A"><span class="lang-ar">قيد التوصيل</span><span class="lang-en">Out for delivery</span></span>
+            <span class="flow-arrow">←</span>
+            <span class="chip" style="background:#2E7D32"><span class="lang-ar">تم التسليم</span><span class="lang-en">Delivered</span></span>
+          </div>
+          <p class="mt-24"><span class="lang-ar">وإن اخترت الاستلام من المتجر:</span><span class="lang-en">And if you chose in-store pickup:</span></p>
+          <div class="flow">
+            <span class="chip" style="background:#F9A825"><span class="lang-ar">قيد الانتظار</span><span class="lang-en">Pending</span></span>
+            <span class="flow-arrow">←</span>
+            <span class="chip" style="background:#00897B"><span class="lang-ar">جاهزة للاستلام</span><span class="lang-en">Ready for pickup</span></span>
+            <span class="flow-arrow">←</span>
+            <span class="chip" style="background:#33691E"><span class="lang-ar">مكتملة</span><span class="lang-en">Completed</span></span>
+          </div>
+          <p class="mt-24"><span class="lang-ar">وفي كل الحالات، إن احتاج الأمر إلغاء الطلب:</span><span class="lang-en">And in any case, if the order needs to be canceled:</span></p>
+          <div class="flow">
+            <span class="chip" style="background:#C62828"><span class="lang-ar">تم الإلغاء</span><span class="lang-en">Canceled</span></span>
+          </div>
+          <div class="callout mt-24">
+            <span class="ico">🔔</span>
+            <span><span class="lang-ar">تصلك رسالة تنبيه فورية في كل مرة تتغيّر فيها حالة طلبك، بدون الحاجة لفتح التطبيق للتحقق.</span><span class="lang-en">You'll get an instant notification every time your order's status changes — no need to keep checking the app.</span></span>
+          </div>
+        </div>
+
+        <!-- ============ 5. Edit & approval scenario ============ -->
+        <div class="card" data-reveal>
+          <h2><span class="num">٥</span> <span class="lang-ar">سيناريو: تعديل على طلبك يحتاج موافقتك</span><span class="lang-en">Scenario: An Edit to Your Order Needs Your Approval</span></h2>
+          <p>
+            <span class="lang-ar">أحياناً قد يحتاج فريق المتجر لتعديل طلبك أثناء تجهيزه — مثلاً منتج نفدت كميته. في هذه الحالة:</span>
+            <span class="lang-en">Sometimes our team may need to adjust your order while preparing it — for example, if an item is out of stock. In that case:</span>
+          </p>
+          <ol style="padding-inline-start:22px;margin-top:10px;">
+            <li><span class="lang-ar">تتحول حالة طلبك إلى "بانتظار ردك"، وتصلك رسالة توضح ما الذي تغيّر بالتحديد.</span><span class="lang-en">Your order status changes to "Awaiting your response," and you receive a message explaining exactly what changed.</span></li>
+            <li><span class="lang-ar">تراجع التعديل من داخل صفحة الطلب، ولديك ثلاثة خيارات: الموافقة على المتابعة، إلغاء الطلب، أو إرسال رسالة للمتجر.</span><span class="lang-en">You review the change from your order's page and have three options: approve and continue, cancel the order, or send a message to the store.</span></li>
+            <li><span class="lang-ar">بمجرّد ردك، يتابع فريق المتجر تجهيز طلبك وفق قرارك.</span><span class="lang-en">Once you respond, our team proceeds according to your decision.</span></li>
+          </ol>
+          <div class="callout mt-24">
+            <span class="ico">💬</span>
+            <span><span class="lang-ar">يمكنك أيضاً مراسلة المتجر مباشرة من صفحة طلبك في أي وقت لطرح أي سؤال بخصوصه.</span><span class="lang-en">You can also message the store directly from your order's page at any time with any question.</span></span>
+          </div>
+        </div>
+
+        <!-- ============ 6. Cancellation ============ -->
+        <div class="card" data-reveal>
+          <h2><span class="num">٦</span> <span class="lang-ar">سياسة الإلغاء</span><span class="lang-en">Cancellation Policy</span></h2>
+          <ul style="padding-inline-start:22px;">
+            <li><span class="lang-ar">يمكنك إلغاء طلبك بنفسك طالما لم يبدأ المتجر بتجهيزه بعد (وهو لا يزال "قيد الانتظار").</span><span class="lang-en">You can cancel your order yourself as long as the store hasn't started preparing it yet (still "Pending").</span></li>
+            <li><span class="lang-ar">بعد بدء التجهيز، يمكن لفريق المتجر إلغاءه عند الحاجة (كعدم توفّر الطلب بالكامل)، وستصلك رسالة بالسبب فور حدوث ذلك.</span><span class="lang-en">After preparation begins, our team can cancel it if needed (e.g. the order can't be fulfilled at all), and you'll be notified of the reason immediately.</span></li>
+            <li><span class="lang-ar">إن كان لديك طلب خاص لإلغاء طلب بدأ تجهيزه بالفعل، تواصل مع المتجر مباشرة.</span><span class="lang-en">If you need to cancel an order that's already being prepared, please contact the store directly.</span></li>
+          </ul>
+        </div>
+
+        <!-- ============ 7. Notifications ============ -->
+        <div class="card" data-reveal>
+          <h2><span class="num">٧</span> <span class="lang-ar">متى تصلك الإشعارات؟</span><span class="lang-en">When Do You Get Notified?</span></h2>
+          <div class="grid grid-2 mt-8">
+            <div class="feature-card" style="box-shadow:none;padding:18px 20px;">
+              <p>🚚 <span class="lang-ar">عند خروج طلبك للتوصيل، وعند تسليمه</span><span class="lang-en">When your order goes out for delivery, and when it's delivered</span></p>
+            </div>
+            <div class="feature-card" style="box-shadow:none;padding:18px 20px;">
+              <p>🏬 <span class="lang-ar">عند جهوزية طلبك للاستلام من المتجر</span><span class="lang-en">When your order is ready for in-store pickup</span></p>
+            </div>
+            <div class="feature-card" style="box-shadow:none;padding:18px 20px;">
+              <p>✏️ <span class="lang-ar">عند حدوث أي تعديل على طلبك</span><span class="lang-en">Whenever your order is edited</span></p>
+            </div>
+            <div class="feature-card" style="box-shadow:none;padding:18px 20px;">
+              <p>💬 <span class="lang-ar">عند وصول رسالة جديدة من المتجر بخصوص طلبك</span><span class="lang-en">When you receive a new message from the store about your order</span></p>
+            </div>
+            <div class="feature-card" style="box-shadow:none;padding:18px 20px;">
+              <p>❌ <span class="lang-ar">عند إلغاء طلبك من قِبل المتجر</span><span class="lang-en">If your order is canceled by the store</span></p>
+            </div>
+            <div class="feature-card" style="box-shadow:none;padding:18px 20px;">
+              <p>✅ <span class="lang-ar">عند الموافقة على تفعيل حسابك (للحسابات الجديدة)</span><span class="lang-en">When your account is approved (for new accounts)</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ 8. Behind the scenes ============ -->
+        <div class="card" data-reveal>
+          <h2><span class="num">٨</span> <span class="lang-ar">من يعمل خلف الكواليس؟</span><span class="lang-en">Who Works Behind the Scenes?</span></h2>
+          <p><span class="lang-ar">فريق المتجر يستخدم نفس التطبيق بأدوار مختلفة لتجهيز طلبك من البداية للنهاية:</span><span class="lang-en">Our team uses the same app with different roles to prepare your order from start to finish:</span></p>
+          <div class="grid grid-2 mt-16">
+            <div class="role-card">
+              <div class="ico" style="background:#FFF4E9;">📦</div>
+              <h4><span class="lang-ar">عامل التوضيب</span><span class="lang-en">Packer</span></h4>
+              <p><span class="lang-ar">يستلم طلبك، يجهّز منتجاته، ويجري أي تعديل ضروري عليه.</span><span class="lang-en">Receives your order, prepares its items, and makes any necessary adjustments.</span></p>
+            </div>
+            <div class="role-card">
+              <div class="ico" style="background:#E8F1FC;">🧾</div>
+              <h4><span class="lang-ar">الكاشير</span><span class="lang-en">Cashier</span></h4>
+              <p><span class="lang-ar">يتابع فوترة الطلبات وتحصيل المبالغ المستحقة.</span><span class="lang-en">Handles order billing and collecting payments due.</span></p>
+            </div>
+            <div class="role-card">
+              <div class="ico" style="background:#EAF6EC;">🚚</div>
+              <h4><span class="lang-ar">عامل التوصيل</span><span class="lang-en">Delivery Worker</span></h4>
+              <p><span class="lang-ar">يستلم طلبات التوصيل ويوصّلها لعناوين الزبائن.</span><span class="lang-en">Picks up delivery orders and brings them to customers' addresses.</span></p>
+            </div>
+            <div class="role-card">
+              <div class="ico" style="background:#F3E8FC;">🛠️</div>
+              <h4><span class="lang-ar">الإدارة</span><span class="lang-en">Admin</span></h4>
+              <p><span class="lang-ar">تشرف على كل العمليات وتدير حسابات الزبائن والموظفين والمنتجات.</span><span class="lang-en">Oversees all operations and manages customer accounts, staff, and products.</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ 9. Language ============ -->
+        <div class="card" data-reveal>
+          <h2><span class="num">٩</span> <span class="lang-ar">تبديل اللغة</span><span class="lang-en">Switching Languages</span></h2>
+          <p>
+            <span class="lang-ar">يدعم التطبيق العربية والإنكليزية بالكامل. يمكنك تبديل اللغة في أي وقت من صفحة تسجيل الدخول أو من ملفك الشخصي — ويبقى اختيارك محفوظاً في المرات القادمة.</span>
+            <span class="lang-en">The app fully supports Arabic and English. You can switch languages anytime from the login screen or your profile — your choice is remembered for next time.</span>
+          </p>
+        </div>
+
+        <!-- ============ FAQ ============ -->
+        <div class="card" id="faq" data-reveal>
+          <h2><span class="num">١٠</span> <span class="lang-ar">أسئلة شائعة</span><span class="lang-en">FAQ</span></h2>
+          <div class="faq" style="margin-top:6px;">
+            <div class="faq-item">
+              <div class="faq-q">
+                <span><span class="lang-ar">هل يمكنني الدفع ببطاقة بنكية؟</span><span class="lang-en">Can I pay with a bank card?</span></span>
+                <span class="plus">+</span>
+              </div>
+              <div class="faq-a">
+                <span class="lang-ar">حالياً الدفع يكون نقداً فقط عند استلام الطلب، سواء كان توصيلاً أو استلاماً من المتجر.</span>
+                <span class="lang-en">Currently, payment is cash-only upon receiving your order, whether by delivery or in-store pickup.</span>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">
+                <span><span class="lang-ar">كم يستغرق التوصيل عادة؟</span><span class="lang-en">How long does delivery usually take?</span></span>
+                <span class="plus">+</span>
+              </div>
+              <div class="faq-a">
+                <span class="lang-ar">يختلف حسب حجم الطلب ومنطقتك — ستتابع كل مرحلة لحظة بلحظة عبر إشعارات التطبيق.</span>
+                <span class="lang-en">It varies based on order size and your area — you'll track every stage live through app notifications.</span>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">
+                <span><span class="lang-ar">هل يمكنني تعديل طلبي بعد إرساله؟</span><span class="lang-en">Can I edit my order after submitting it?</span></span>
+                <span class="plus">+</span>
+              </div>
+              <div class="faq-a">
+                <span class="lang-ar">راسل المتجر مباشرة من صفحة طلبك في أقرب وقت ممكن قبل بدء التجهيز.</span>
+                <span class="lang-en">Message the store directly from your order's page as soon as possible before preparation begins.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="bg-alt">
+  <div class="container">
+    <div class="cta-band" data-reveal>
+      <h2><span class="lang-ar">لديك سؤال آخر؟</span><span class="lang-en">Have another question?</span></h2>
+      <p><span class="lang-ar">فريقنا جاهز لمساعدتك في أي وقت.</span><span class="lang-en">Our team is ready to help anytime.</span></p>
+      <a href="mailto:santaamer11@gmail.com" class="btn btn-primary">
+        ✉️ <span class="lang-ar">راسلنا الآن</span><span class="lang-en">Email Us Now</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Footer ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/icon.png" alt="شعار متجري الالكتروني">
+          <span class="lang-ar">متجري الالكتروني</span>
+          <span class="lang-en">My Store</span>
+        </div>
+        <p style="font-size:14px;max-width:280px;">
+          <span class="lang-ar">تطبيق تسوّق من السوبرماركت — توصيل أو استلام، دفع نقدي، ومتابعة لحظية لطلبك.</span>
+          <span class="lang-en">A supermarket shopping app — delivery or pickup, cash payment, and live order tracking.</span>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4><span class="lang-ar">روابط</span><span class="lang-en">Links</span></h4>
+        <ul>
+          <li><a href="index.html"><span class="lang-ar">الرئيسية</span><span class="lang-en">Home</span></a></li>
+          <li><a href="how-it-works.html"><span class="lang-ar">كيف يعمل التطبيق</span><span class="lang-en">How It Works</span></a></li>
+          <li><a href="privacy.html"><span class="lang-ar">سياسة الخصوصية</span><span class="lang-en">Privacy Policy</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4><span class="lang-ar">للزبائن</span><span class="lang-en">For Customers</span></h4>
+        <ul>
+          <li><a href="#ordering"><span class="lang-ar">كيف أطلب؟</span><span class="lang-en">How to order</span></a></li>
+          <li><a href="#status"><span class="lang-ar">حالات الطلب</span><span class="lang-en">Order statuses</span></a></li>
+          <li><a href="#faq"><span class="lang-ar">الأسئلة الشائعة</span><span class="lang-en">FAQ</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4><span class="lang-ar">تواصل معنا</span><span class="lang-en">Contact</span></h4>
+        <ul>
+          <li><a href="mailto:santaamer11@gmail.com">santaamer11@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 <span class="lang-ar">متجري الالكتروني — جميع الحقوق محفوظة</span><span class="lang-en">My Store — All rights reserved</span></span>
+      <span><span class="lang-ar">صُنع بعناية للتسوّق اليومي</span><span class="lang-en">Made with care for everyday shopping</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
